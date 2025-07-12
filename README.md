@@ -2,7 +2,7 @@
 
 # **About:**
 
-* The goal is project is to find the best model that performs the best in diagnozing breast cancer, determining whether the cancer tumors  are benign (non-cancerous) or malignant (cancerous)
+* The goal of this project is to find the most optimal model that performs the best in diagnosing breast cancer, determining whether the cancer tumors are benign (non-cancerous) or malignant (cancerous)
 * Although, this is a .csv multivariate dataset, the features were computed from a digitized image of a fine needle aspirate (FNA) of breast mass, using varying techniques in Linear Programming
 
 # **Data:**
@@ -11,30 +11,30 @@
 * State origin of the data is **Wisconsin, USA**
 * Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
 
-How were 30 features extracted from one image data?
+How were 30 features extracted from one image?
 1. For each nucleus, ten(10) real-valued features were computed:
 
-    ** radius (mean of distanced from center to points on the perimeter)
+       ** radius (mean of distances from the center to points on the perimeter)
     
-    ** texture (std of grayscale values)
+       ** texture (std of grayscale values)
+       
+       ** perimeter
+       
+       ** area
+       
+       ** smoothness (local variation in radius lengths)
+       
+       ** compactness (perimeter^2 / area - 1.0)
+       
+       ** concavity ( severity of concave portions of the contour)
+       
+       ** concave points (number of concave portions of the contour)
+       
+       ** symmetry
+       
+       ** fractal dimension ("coastline approximation" - 1)
     
-    ** perimeter
-    
-    ** area
-    
-    ** smoothness (local variation in radius lengths)
-    
-    ** compactness (perimeter^2 / area - 1.0)
-    
-    ** concavity ( severity of concave portions of the contour)
-    
-    ** concave points (number of concave portions of the contour)
-    
-    ** symmetry
-    
-    ** fractal dimension ("coastline approximation" - 1)
-    
-2. (a) Recorded to 4 decimal places, of each ten features above, the _mean_ , _standard error_ , and _'worst'_ or "largest" (-mean of the 3 largest values), for each image.
+2. (a) Recorded to 4 decimal places, of each ten features above, the _mean_, _standard error_, and _'worst'_ or "largest" (-mean of the 3 largest values), for each image.
 
 
 2. (b) For example, field 3 = mean radius, field 13 = radius SE, field 23 = worst radius
@@ -45,7 +45,7 @@ How were 30 features extracted from one image data?
 
 # **Machine Learning (ML) Models for Comparisons:**
 
-* K Nearest Neigbor (KNN)
-* Logistic Regression
+* K Nearest Neighbor (KNN)
 * Random Forest
+* Logistic Regression
 * Support Vector Machines
